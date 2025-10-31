@@ -39,9 +39,10 @@ new:
 		templates/metadata.template.json > problems/$(PATTERN)/$(SLUG)/metadata.json
 	@echo "problems/$(PATTERN)/$(SLUG)" >> Cargo.toml.tmp
 	@if grep -q "^members = \[" Cargo.toml; then \
-		sed '/^members = \[/a\  "problems/$(PATTERN)/$(SLUG)",' Cargo.toml > Cargo.toml.new; \
-		mv Cargo.toml.new Cargo.toml; \
-	fi
+    sed '/^members = \[/a\
+  "problems/$(PATTERN)/$(SLUG)",' Cargo.toml > Cargo.toml.new; \
+    mv Cargo.toml.new Cargo.toml; \
+  fi
 	@rm -f Cargo.toml.tmp
 	@echo "✓ Created problem structure at problems/$(PATTERN)/$(SLUG)/"
 	@echo "✓ Added to Rust workspace"
