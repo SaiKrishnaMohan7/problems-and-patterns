@@ -1,0 +1,22 @@
+{
+  "title": "Contains Duplicate",
+  "slug": "contains-duplicate",
+  "difficulty": "Medium",
+  "pattern": "arrays-hashing",
+  "neetcode_url": "",
+  "leetcode_url": "",
+  "tags": [],
+  "time_complexity": "O(?)",
+  "space_complexity": "O(?)",
+  "description": "TODO: Add description",
+  "hints": [
+    "Add helpful hints here"
+  ],
+  "real_world_applications": [
+    "Detecting duplicate user registrations (email/username validation)",
+    "Finding duplicate files in a file system by hash",
+    "Identifying duplicate transactions in payment processing",
+    "Cache key collision detection",
+    "Deduplication in log aggregation systems"
+  ]
+}
