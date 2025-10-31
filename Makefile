@@ -1,4 +1,4 @@
-.PHONY: new list validate test test-ts test-go test-rs help
+.PHONY: new list validate test test-ts test-go test-rs populate-apps help
 
 # Default values
 DIFFICULTY ?= Medium
@@ -8,6 +8,7 @@ help:
 	@echo "  make new PATTERN=<pattern> SLUG=<slug> TITLE=<title> [DIFFICULTY=<difficulty>] [NEETCODE_URL=<url>] [LEETCODE_URL=<url>]"
 	@echo "  make list                     - List all problems by pattern"
 	@echo "  make validate                 - Validate repository structure"
+	@echo "  make populate-apps [PATTERN=<pattern>] [SLUG=<slug>] - Populate real-world applications"
 	@echo "  make test                     - Run all tests (TypeScript, Go, Rust)"
 	@echo "  make test-ts [PROBLEM=<slug>] - Run TypeScript tests"
 	@echo "  make test-go [PROBLEM=<slug>] - Run Go tests"
@@ -21,15 +22,16 @@ new:
 	fi
 	@echo "Creating problem: $(TITLE)"
 	@mkdir -p problems/$(PATTERN)/$(SLUG)
+	$(eval GO_PACKAGE := $(shell echo $(SLUG) | tr '-' '_'))
 	@sed 's/{{TITLE}}/$(TITLE)/g; s/{{SLUG}}/$(SLUG)/g; s/{{PATTERN}}/$(PATTERN)/g; s/{{DIFFICULTY}}/$(DIFFICULTY)/g; s/{{DESCRIPTION}}/TODO: Add description/g' \
 		templates/problem.template.md > problems/$(PATTERN)/$(SLUG)/problem.md
 	@sed 's/{{TITLE}}/$(TITLE)/g; s/{{SLUG}}/$(SLUG)/g; s/{{PATTERN}}/$(PATTERN)/g; s/{{DIFFICULTY}}/$(DIFFICULTY)/g' \
 		templates/solution.template.ts > problems/$(PATTERN)/$(SLUG)/solution.ts
 	@sed 's/{{TITLE}}/$(TITLE)/g; s/{{SLUG}}/$(SLUG)/g' \
 		templates/solution.test.template.ts > problems/$(PATTERN)/$(SLUG)/solution.test.ts
-	@sed 's/{{TITLE}}/$(TITLE)/g; s/{{SLUG}}/$(SLUG)/g; s/{{PATTERN}}/$(PATTERN)/g; s/{{DIFFICULTY}}/$(DIFFICULTY)/g' \
+	@sed 's/{{TITLE}}/$(TITLE)/g; s/{{SLUG}}/$(GO_PACKAGE)/g; s/{{PATTERN}}/$(PATTERN)/g; s/{{DIFFICULTY}}/$(DIFFICULTY)/g' \
 		templates/solution.template.go > problems/$(PATTERN)/$(SLUG)/solution.go
-	@sed 's/{{TITLE}}/$(TITLE)/g; s/{{SLUG}}/$(SLUG)/g' \
+	@sed 's/{{TITLE}}/$(TITLE)/g; s/{{SLUG}}/$(GO_PACKAGE)/g' \
 		templates/solution_test.template.go > problems/$(PATTERN)/$(SLUG)/solution_test.go
 	@sed 's/{{TITLE}}/$(TITLE)/g; s/{{SLUG}}/$(SLUG)/g; s/{{PATTERN}}/$(PATTERN)/g; s/{{DIFFICULTY}}/$(DIFFICULTY)/g' \
 		templates/solution.template.rs > problems/$(PATTERN)/$(SLUG)/solution.rs
@@ -45,6 +47,7 @@ new:
 	@rm -f Cargo.toml.tmp
 	@echo "✓ Created problem structure at problems/$(PATTERN)/$(SLUG)/"
 	@echo "✓ Added to Rust workspace"
+	@python3 scripts/populate-real-world-apps.py $(PATTERN) $(SLUG) || echo "⚠ Could not auto-populate real-world applications (you can run 'make populate-apps PATTERN=$(PATTERN) SLUG=$(SLUG)' later)"
 	@echo ""
 	@echo "Next steps:"
 	@echo "  1. Edit problem.md with the problem description"
@@ -112,6 +115,15 @@ validate:
 		echo ""; \
 		echo "❌ Found $$errors problem(s)"; \
 		exit 1; \
+	fi
+
+populate-apps:
+	@if [ -n "$(PATTERN)" ] && [ -n "$(SLUG)" ]; then \
+		echo "Populating real-world applications for $(PATTERN)/$(SLUG)..."; \
+		python3 scripts/populate-real-world-apps.py $(PATTERN) $(SLUG); \
+	else \
+		echo "Populating real-world applications for all problems..."; \
+		python3 scripts/populate-real-world-apps.py; \
 	fi
 
 test: test-ts test-go test-rs
