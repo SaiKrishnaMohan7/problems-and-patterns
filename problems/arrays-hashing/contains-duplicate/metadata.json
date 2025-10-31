@@ -3,14 +3,15 @@
   "slug": "contains-duplicate",
   "difficulty": "Easy",
   "pattern": "arrays-hashing",
-  "neetcode_url": "",
-  "leetcode_url": "",
+  "neetcode_url": "https://neetcode.io/problems/duplicate-integer?list=neetcode150",
+  "leetcode_url": "https://leetcode.com/problems/contains-duplicate/description/",
   "tags": [],
-  "time_complexity": "O(?)",
-  "space_complexity": "O(?)",
-  "description": "TODO: Add description",
+  "time_complexity": "O(n)",
+  "space_complexity": "O(n)",
+  "description": "Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.",
   "hints": [
-    "Add helpful hints here"
+    "HashMap",
+    "Any KV data structure"
   ],
   "real_world_applications": [
     "Detecting duplicate user registrations (email/username validation)",

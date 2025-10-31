@@ -2,6 +2,7 @@
 resolver = "2"
 members = [
   "problems/arrays-hashing/contains-duplicate",
+  "problems/arrays-hashing/valid-anagram",
 ]
 
 [workspace.package]

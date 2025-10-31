@@ -1,0 +1,21 @@
+{
+  "title": "Valid Anagram",
+  "slug": "valid-anagram",
+  "difficulty": "Easy",
+  "pattern": "arrays-hashing",
+  "neetcode_url": "https://neetcode.io/problems/is-anagram?list=neetcode150",
+  "leetcode_url": "https://leetcode.com/problems/valid-anagram/description/",
+  "tags": [],
+  "time_complexity": "O(n)",
+  "space_complexity": "O(n)",
+  "description": "Given two strings s and t, return true if t is an of s, and false otherwise.",
+  "hints": [
+    "hashmaps"
+  ],
+  "real_world_applications": [
+    "DNA sequence matching in bioinformatics",
+    "Detecting plagiarism in content systems",
+    "Spam filter pattern matching",
+    "Fuzzy search preprocessing"
+  ]
+}
