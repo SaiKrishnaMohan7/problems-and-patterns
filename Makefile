@@ -23,6 +23,7 @@ new:
 	@echo "Creating problem: $(TITLE)"
 	@mkdir -p problems/$(PATTERN)/$(SLUG)
 	$(eval GO_PACKAGE := $(shell echo $(SLUG) | tr '-' '_'))
+	$(eval RUST_PACKAGE := $(shell echo $(SLUG) | tr '-' '_'))
 	@sed 's/{{TITLE}}/$(TITLE)/g; s/{{SLUG}}/$(SLUG)/g; s/{{PATTERN}}/$(PATTERN)/g; s/{{DIFFICULTY}}/$(DIFFICULTY)/g; s/{{DESCRIPTION}}/TODO: Add description/g' \
 		templates/problem.template.md > problems/$(PATTERN)/$(SLUG)/problem.md
 	@sed 's/{{TITLE}}/$(TITLE)/g; s/{{SLUG}}/$(SLUG)/g; s/{{PATTERN}}/$(PATTERN)/g; s/{{DIFFICULTY}}/$(DIFFICULTY)/g' \
@@ -35,7 +36,7 @@ new:
 		templates/solution_test.template.go > problems/$(PATTERN)/$(SLUG)/solution_test.go
 	@sed 's/{{TITLE}}/$(TITLE)/g; s/{{SLUG}}/$(SLUG)/g; s/{{PATTERN}}/$(PATTERN)/g; s/{{DIFFICULTY}}/$(DIFFICULTY)/g' \
 		templates/solution.template.rs > problems/$(PATTERN)/$(SLUG)/solution.rs
-	@sed 's/{{SLUG}}/$(SLUG)/g' \
+	@sed 's/{{SLUG}}/$(RUST_PACKAGE)/g' \
 		templates/cargo.template.toml > problems/$(PATTERN)/$(SLUG)/Cargo.toml
 	@sed 's/{{TITLE}}/$(TITLE)/g; s/{{SLUG}}/$(SLUG)/g; s/{{PATTERN}}/$(PATTERN)/g; s/{{DIFFICULTY}}/$(DIFFICULTY)/g; s/{{DESCRIPTION}}/TODO: Add description/g' \
 		templates/metadata.template.json > problems/$(PATTERN)/$(SLUG)/metadata.json
@@ -149,7 +150,8 @@ test-go:
 test-rs:
 	@echo "Running Rust tests..."
 	@if [ -n "$(PROBLEM)" ]; then \
-		cargo test -p $(PROBLEM); \
+		RUST_PKG=$$(echo "$(PROBLEM)" | tr '-' '_'); \
+		cargo test -p $$RUST_PKG; \
 	else \
 		cargo test; \
 	fi
