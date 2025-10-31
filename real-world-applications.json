@@ -1,0 +1,1035 @@
+{
+  "patterns": {
+    "arrays-hashing": {
+      "pattern_applications": [
+        "Fast lookups in distributed caches",
+        "Deduplication in log aggregation systems",
+        "Hot key detection in key-value stores",
+        "Rate limiting counters"
+      ],
+      "problems": {
+        "contains-duplicate": [
+          "Detecting duplicate user registrations (email/username validation)",
+          "Finding duplicate files in a file system by hash",
+          "Identifying duplicate transactions in payment processing",
+          "Cache key collision detection",
+          "Deduplication in log aggregation systems"
+        ],
+        "valid-anagram": [
+          "DNA sequence matching in bioinformatics",
+          "Detecting plagiarism in content systems",
+          "Spam filter pattern matching",
+          "Fuzzy search preprocessing"
+        ],
+        "two-sum": [
+          "Load balancing (find two servers that sum to target capacity)",
+          "Packet pair analysis in networking",
+          "Budget allocation in resource scheduling",
+          "Finding complementary resource pairs in distributed systems"
+        ],
+        "group-anagrams": [
+          "Clustering similar log messages for analysis",
+          "Grouping API endpoints by signature",
+          "Organizing similar DNS queries",
+          "Batching similar database queries"
+        ],
+        "top-k-frequent-elements": [
+          "Identifying hot keys in cache systems",
+          "Finding most frequent API endpoints for rate limiting",
+          "Detecting DDoS patterns in traffic",
+          "Monitoring metrics aggregation",
+          "Popular item tracking in recommendation systems"
+        ],
+        "product-of-array-except-self": [
+          "Calculating distributed metrics (total minus current node)",
+          "Computing marginal costs in resource allocation",
+          "Load distribution across nodes excluding self"
+        ],
+        "encode-decode-strings": [
+          "Protocol serialization (Redis RESP protocol)",
+          "URL encoding/decoding in web systems",
+          "Packet payload formatting in network protocols",
+          "Custom wire format implementation"
+        ],
+        "longest-consecutive-sequence": [
+          "Detecting network partition windows",
+          "Finding continuous availability periods in monitoring",
+          "Log correlation by timestamp ranges",
+          "Identifying contiguous memory blocks"
+        ]
+      }
+    },
+    "two-pointers": {
+      "pattern_applications": [
+        "Efficient array/string processing without extra space",
+        "Merging sorted streams",
+        "Optimizing resource allocation",
+        "Pattern matching in protocols"
+      ],
+      "problems": {
+        "valid-palindrome": [
+          "Validating symmetric encryption keys",
+          "Checking DNS/reverse DNS consistency",
+          "Protocol message validation",
+          "Detecting mirrored attack patterns"
+        ],
+        "two-sum-ii": [
+          "Binary search in sorted network latency logs",
+          "Finding matching request/response pairs in distributed tracing",
+          "Pairing complementary resources in sorted datasets"
+        ],
+        "3sum": [
+          "Multi-constraint resource allocation (CPU + memory + disk)",
+          "Three-way network merge in consensus algorithms",
+          "Finding resource triplets that satisfy constraints"
+        ],
+        "container-with-most-water": [
+          "Optimizing load balancer backend selection",
+          "Maximizing throughput with bandwidth constraints",
+          "Connection pool sizing optimization",
+          "Resource capacity planning"
+        ],
+        "trapping-rain-water": [
+          "Memory fragmentation analysis",
+          "Bandwidth utilization gaps in network traffic",
+          "Storage block allocation optimization",
+          "Finding wasted capacity in resource allocation"
+        ]
+      }
+    },
+    "sliding-window": {
+      "pattern_applications": [
+        "Stream processing with fixed time/size windows",
+        "Rate limiting implementations",
+        "Real-time analytics",
+        "Protocol pattern matching"
+      ],
+      "problems": {
+        "best-time-to-buy-sell-stock": [
+          "Rate limiting time windows",
+          "Connection pool high-water marks",
+          "Circuit breaker threshold tracking",
+          "Monitoring rolling maxima in metrics"
+        ],
+        "longest-substring-without-repeating": [
+          "Detecting TCP retransmission windows",
+          "Unique visitor tracking in analytics",
+          "Session deduplication",
+          "Stream deduplication in real-time systems"
+        ],
+        "longest-repeating-character-replacement": [
+          "Stream compression analysis",
+          "Detecting repeated patterns in packet captures",
+          "Log similarity matching",
+          "Finding dominant patterns in time windows"
+        ],
+        "permutation-in-string": [
+          "Protocol pattern matching in network traffic",
+          "Detecting malicious payloads in packets",
+          "Intrusion detection signatures",
+          "Finding attack patterns in logs"
+        ],
+        "minimum-window-substring": [
+          "Finding minimal log spans for debugging",
+          "Packet capture filtering with constraints",
+          "Trace aggregation with complete data",
+          "Minimal time window for SLA compliance"
+        ],
+        "sliding-window-maximum": [
+          "Monitoring rolling metrics (P99 latency over last minute)",
+          "Time-series database queries with aggregations",
+          "CDN cache hit rate tracking",
+          "Real-time dashboard computations"
+        ]
+      }
+    },
+    "stack": {
+      "pattern_applications": [
+        "Expression parsing and evaluation",
+        "Undo/redo systems",
+        "Nested structure validation",
+        "Monotonic stack optimizations"
+      ],
+      "problems": {
+        "valid-parentheses": [
+          "Parsing configuration files (JSON/YAML/TOML)",
+          "Validating nested API requests",
+          "HTML/XML parsing in web scrapers",
+          "Bracket matching in code editors"
+        ],
+        "min-stack": [
+          "Monitoring min/max metrics with constant time lookup",
+          "Implementing undo/redo in editors",
+          "Tracking bounds in streaming data",
+          "Real-time minimum/maximum tracking"
+        ],
+        "evaluate-reverse-polish-notation": [
+          "Expression evaluation in monitoring queries (Prometheus)",
+          "Calculator services and APIs",
+          "SQL query optimization",
+          "Postfix notation in compilers"
+        ],
+        "generate-parentheses": [
+          "Generating test cases for parsers",
+          "Creating nested resource hierarchies",
+          "Building balanced tree structures"
+        ],
+        "daily-temperatures": [
+          "Cache expiration scheduling",
+          "Job scheduling with dependencies",
+          "Alerting on threshold crossings",
+          "Next significant event computation"
+        ],
+        "car-fleet": [
+          "Convoy routing in CDNs",
+          "Batch job scheduling with arrival times",
+          "Packet train analysis in networks",
+          "Grouping dependent operations"
+        ],
+        "largest-rectangle-in-histogram": [
+          "Memory allocation optimization",
+          "Database query plan selection",
+          "Container bin packing",
+          "Resource utilization analysis"
+        ]
+      }
+    },
+    "binary-search": {
+      "pattern_applications": [
+        "Efficient searching in sorted data",
+        "Finding optimal values in monotonic spaces",
+        "Log indexing and retrieval",
+        "Distributed data partitioning"
+      ],
+      "problems": {
+        "binary-search": [
+          "Log indexing and search in monitoring systems",
+          "Distributed data partitioning (consistent hashing ring lookup)",
+          "Version control bisect operations",
+          "Finding elements in sorted streams"
+        ],
+        "search-2d-matrix": [
+          "Geospatial indexing (quadtree lookups)",
+          "IP address range lookups in routing",
+          "Time-series data querying in databases",
+          "Multi-dimensional index searches"
+        ],
+        "koko-eating-bananas": [
+          "Rate limiting (finding optimal request rate)",
+          "Capacity planning and resource throttling",
+          "Finding minimum processing rate to meet deadline",
+          "Auto-scaling threshold determination"
+        ],
+        "find-minimum-in-rotated-sorted-array": [
+          "Detecting failover in circular replication",
+          "Finding split points in distributed logs",
+          "Locating wraparound in circular buffers",
+          "Identifying rotation points in time-series"
+        ],
+        "search-in-rotated-sorted-array": [
+          "Time-series queries across distributed nodes",
+          "Log searching in ring buffers",
+          "Searching in circular data structures",
+          "Handling wrap-around in circular arrays"
+        ],
+        "time-based-key-value-store": [
+          "Implementing versioned configuration stores",
+          "Audit logs with time-travel queries",
+          "Time-travel debugging in distributed systems",
+          "Historical data snapshots"
+        ],
+        "median-of-two-sorted-arrays": [
+          "Merging sorted metrics from multiple sources",
+          "Computing distributed percentiles",
+          "Combining sorted streams efficiently",
+          "Finding median in partitioned data"
+        ]
+      }
+    },
+    "linked-list": {
+      "pattern_applications": [
+        "Dynamic memory management",
+        "LRU cache implementations",
+        "Undo/redo operations",
+        "Queue and buffer management"
+      ],
+      "problems": {
+        "reverse-linked-list": [
+          "Undo/redo stacks in applications",
+          "Reversing proxy chains in networking",
+          "Backtracking in routing algorithms",
+          "Reversing transaction logs"
+        ],
+        "merge-two-sorted-lists": [
+          "Merging time-series data from multiple sources",
+          "Log aggregation from distributed services",
+          "Combining sorted API responses",
+          "K-way merge in external sorting"
+        ],
+        "reorder-list": [
+          "Memory defragmentation algorithms",
+          "Rearranging packet queues for priority",
+          "Job scheduling optimization",
+          "Interleaving operations for fairness"
+        ],
+        "remove-nth-node-from-end": [
+          "Sliding window in stream processing",
+          "Implementing circular buffers with removal",
+          "Maintaining fixed-size buffers",
+          "Recent history tracking"
+        ],
+        "copy-list-with-random-pointer": [
+          "Deep cloning complex object graphs",
+          "Snapshot mechanisms in databases",
+          "Checkpoint systems in distributed computing",
+          "Graph serialization and deserialization"
+        ],
+        "add-two-numbers": [
+          "Arbitrary-precision arithmetic in financial systems",
+          "Cryptographic operations on large numbers",
+          "Big integer calculations",
+          "Checksum computation"
+        ],
+        "linked-list-cycle": [
+          "Detecting infinite loops in state machines",
+          "Finding circular dependencies in service meshes",
+          "Deadlock detection in distributed systems",
+          "Memory leak detection"
+        ],
+        "lru-cache": [
+          "Cache eviction policies in Redis/Memcached",
+          "Buffer pool management in databases",
+          "Connection pooling in application servers",
+          "Page replacement in operating systems"
+        ]
+      }
+    },
+    "trees": {
+      "pattern_applications": [
+        "Hierarchical data representation",
+        "Database indexing (B-trees)",
+        "File system structures",
+        "Service dependency graphs"
+      ],
+      "problems": {
+        "invert-binary-tree": [
+          "Tree transformations in AST manipulation",
+          "Mirror configuration in load balancers",
+          "Reversing hierarchical structures",
+          "Data structure transformations"
+        ],
+        "maximum-depth": [
+          "Service dependency depth analysis",
+          "Recursion limit detection in systems",
+          "Call stack profiling",
+          "Measuring hierarchy complexity"
+        ],
+        "diameter-of-binary-tree": [
+          "Network diameter calculation in distributed systems",
+          "Finding longest path in service dependency graphs",
+          "Computing worst-case latency paths",
+          "Analyzing organizational hierarchy depth"
+        ],
+        "balanced-binary-tree": [
+          "Validating tree-based indexes (AVL, Red-Black)",
+          "Ensuring B-tree health in databases",
+          "Self-balancing cache structures",
+          "Load balancer tree validation"
+        ],
+        "same-tree": [
+          "Configuration drift detection across environments",
+          "Comparing deployment states",
+          "Validating replicas in distributed databases",
+          "Testing tree data structure equality"
+        ],
+        "subtree-of-another-tree": [
+          "Pattern matching in abstract syntax trees",
+          "Detecting subgraph isomorphism",
+          "Configuration template matching",
+          "Finding repeated structures in hierarchies"
+        ],
+        "lowest-common-ancestor": [
+          "Finding common parent in organizational hierarchies",
+          "Routing table lookups in networks",
+          "Version control merge base computation",
+          "Finding nearest common ancestor in taxonomies"
+        ],
+        "binary-tree-level-order-traversal": [
+          "BFS in service discovery",
+          "Breadth-first crawling of websites",
+          "Parallel job distribution by levels",
+          "Layer-by-layer processing in hierarchies"
+        ],
+        "binary-tree-right-side-view": [
+          "Rendering UI hierarchies (visible nodes)",
+          "Selecting visible nodes in graph visualization",
+          "Finding rightmost elements in tree levels",
+          "Edge node selection in hierarchies"
+        ],
+        "count-good-nodes": [
+          "Monitoring cascading failures in services",
+          "Detecting monotonic increases in metrics",
+          "Validating increasing properties in trees",
+          "Identifying nodes meeting constraints"
+        ],
+        "validate-bst": [
+          "Validating sorted indexes in databases",
+          "Ensuring data structure invariants",
+          "B-tree validation in storage engines",
+          "Checking ordering properties in caches"
+        ],
+        "kth-smallest-element-in-bst": [
+          "Computing percentiles in sorted data",
+          "Finding median in streaming data with BST",
+          "Order statistics in indexed data",
+          "Selecting ranked elements efficiently"
+        ],
+        "construct-binary-tree-from-traversals": [
+          "Rebuilding state from logs",
+          "Deserializing tree structures from wire format",
+          "Recovering from checkpoints",
+          "Reconstructing data structures from serialized form"
+        ]
+      }
+    },
+    "tries": {
+      "pattern_applications": [
+        "Prefix-based search and autocomplete",
+        "IP routing tables",
+        "DNS name resolution",
+        "Command-line completion"
+      ],
+      "problems": {
+        "implement-trie": [
+          "Autocomplete systems in search engines",
+          "IP routing tables with longest prefix matching",
+          "DNS name resolution hierarchies",
+          "Command-line completion in shells",
+          "Dictionary-based compression"
+        ],
+        "design-add-and-search-words": [
+          "Fuzzy search in log analysis",
+          "Pattern matching in monitoring queries",
+          "Wildcard DNS resolution",
+          "Regex-like matching in text systems"
+        ],
+        "word-search-ii": [
+          "Multi-pattern matching in intrusion detection",
+          "Log parsing with multiple patterns simultaneously",
+          "Batch text processing with pattern sets",
+          "Efficient multi-keyword search"
+        ]
+      }
+    },
+    "heap-priority-queue": {
+      "pattern_applications": [
+        "Task scheduling and prioritization",
+        "Real-time percentile computation",
+        "K-way merging",
+        "Event-driven simulations"
+      ],
+      "problems": {
+        "kth-largest-element": [
+          "Computing P99 latency in monitoring",
+          "Finding top N items in streaming data",
+          "Approximate quantiles in analytics",
+          "Selecting top performers in real-time"
+        ],
+        "last-stone-weight": [
+          "Resource allocation simulation",
+          "Load balancing with weights",
+          "Priority-based resource consumption",
+          "Game theory simulations"
+        ],
+        "k-closest-points": [
+          "Geospatial queries (nearest data centers)",
+          "Routing to closest service instance",
+          "Proximity-based sharding in databases",
+          "Finding nearest neighbors in spatial data"
+        ],
+        "kth-largest-element-in-stream": [
+          "Real-time percentile monitoring",
+          "Anomaly detection in streaming metrics",
+          "Adaptive rate limiting based on load",
+          "Dynamic threshold computation"
+        ],
+        "task-scheduler": [
+          "CPU scheduling in operating systems",
+          "Job queue management with constraints",
+          "Thread pool optimization",
+          "Request scheduling with cooldowns"
+        ],
+        "design-twitter-feed": [
+          "Activity feed generation in social networks",
+          "Event stream merging from multiple sources",
+          "Real-time notification delivery",
+          "K-way merge of sorted streams"
+        ],
+        "find-median-from-data-stream": [
+          "Streaming percentile computation",
+          "Real-time monitoring dashboards",
+          "Adaptive QoS in networks",
+          "Dynamic threshold adjustment"
+        ]
+      }
+    },
+    "backtracking": {
+      "pattern_applications": [
+        "Exhaustive search with pruning",
+        "Configuration space exploration",
+        "Constraint satisfaction problems",
+        "Generating valid combinations"
+      ],
+      "problems": {
+        "subsets": [
+          "Generating test cases for feature combinations",
+          "Exploring configuration spaces",
+          "Feature flag combination testing",
+          "Power set generation for options"
+        ],
+        "combination-sum": [
+          "Resource allocation with constraints",
+          "Packet fragmentation strategies",
+          "Task decomposition in parallel systems",
+          "Finding all ways to meet resource requirements"
+        ],
+        "permutations": [
+          "Load testing with different request orderings",
+          "Exploring execution paths in distributed systems",
+          "Fuzzy testing with input permutations",
+          "Scheduling task orderings"
+        ],
+        "subsets-ii": [
+          "Deduplicating configuration variants",
+          "Finding unique deployment states",
+          "Generating distinct test scenarios",
+          "Avoiding duplicate resource allocations"
+        ],
+        "word-search": [
+          "Log pattern matching with constraints",
+          "Intrusion detection in network traffic",
+          "Finding attack signatures in packet payloads",
+          "Path finding in grids with obstacles"
+        ],
+        "palindrome-partitioning": [
+          "String tokenization in parsers",
+          "Breaking down composite keys",
+          "Chunking data for distribution",
+          "Finding valid segmentation points"
+        ]
+      }
+    },
+    "graphs": {
+      "pattern_applications": [
+        "Network topology analysis",
+        "Service dependency mapping",
+        "Social network analysis",
+        "State space exploration"
+      ],
+      "problems": {
+        "number-of-islands": [
+          "Connected component analysis in networks",
+          "Detecting isolated clusters in distributed systems",
+          "Network partition detection",
+          "Finding independent subgraphs"
+        ],
+        "clone-graph": [
+          "Deep copying distributed state",
+          "Snapshotting service mesh topology",
+          "Configuration replication across environments",
+          "Graph serialization"
+        ],
+        "max-area-of-island": [
+          "Finding largest subnet in network topology",
+          "Identifying dominant cluster in distributed system",
+          "Analyzing largest connected component",
+          "Detecting major service groups"
+        ],
+        "pacific-atlantic-water-flow": [
+          "Reachability analysis in routing protocols",
+          "Finding bi-directional paths in networks",
+          "Network flow analysis",
+          "Determining connectivity to multiple sinks"
+        ],
+        "surrounded-regions": [
+          "Detecting isolated networks",
+          "Boundary detection in geographical systems",
+          "Finding enclosed regions in grids",
+          "Network segmentation analysis"
+        ],
+        "rotting-oranges": [
+          "Cache invalidation propagation",
+          "Gossip protocol simulation",
+          "Cascading failure modeling",
+          "Multi-source BFS for infection spread"
+        ],
+        "walls-and-gates": [
+          "Distance computation to nearest service",
+          "Latency mapping in distributed systems",
+          "Shortest path preprocessing",
+          "Multi-source distance calculation"
+        ],
+        "course-schedule": [
+          "Dependency resolution in build systems",
+          "Detecting circular dependencies in services",
+          "Task ordering validation",
+          "Cycle detection in workflows"
+        ],
+        "course-schedule-ii": [
+          "Topological sort for deployment ordering",
+          "Determining service startup sequence",
+          "Build order computation",
+          "Task scheduling with dependencies"
+        ],
+        "redundant-connection": [
+          "Detecting cycles in service dependencies",
+          "Identifying redundant network links",
+          "Finding unnecessary edges in graphs",
+          "Union-find for cycle detection"
+        ],
+        "number-of-connected-components": [
+          "Cluster analysis in distributed systems",
+          "Network partition detection",
+          "Availability zone grouping",
+          "Identifying independent service groups"
+        ],
+        "graph-valid-tree": [
+          "Validating DAG in workflow systems",
+          "Checking service dependency health",
+          "Ensuring acyclic structure",
+          "Tree property validation"
+        ]
+      }
+    },
+    "advanced-graphs": {
+      "pattern_applications": [
+        "Network routing protocols",
+        "Graph optimization",
+        "Minimum spanning trees",
+        "Shortest path computation"
+      ],
+      "problems": {
+        "dijkstra": [
+          "Routing in networks (OSPF, BGP)",
+          "Finding shortest path between data centers",
+          "Traffic engineering in CDNs",
+          "Cost-based routing decisions"
+        ],
+        "prim": [
+          "Building minimum spanning tree for network topology",
+          "Optimizing fiber layout in infrastructure",
+          "Multicast tree construction",
+          "Connecting all nodes with minimum cost"
+        ],
+        "kruskal": [
+          "Network design minimizing cable length",
+          "Clustering data centers efficiently",
+          "Failover planning with minimum redundancy",
+          "Edge-based MST construction"
+        ],
+        "network-delay-time": [
+          "Computing end-to-end latency in networks",
+          "SLA validation across services",
+          "Finding critical path in distributed traces",
+          "Worst-case message propagation time"
+        ],
+        "swim-in-rising-water": [
+          "Pathfinding under resource constraints",
+          "Routing around failures with thresholds",
+          "QoS-aware routing in networks",
+          "Finding paths meeting capacity requirements"
+        ],
+        "alien-dictionary": [
+          "Determining partial ordering from observations",
+          "Inferring protocol states from traffic",
+          "Topological sort from pairwise comparisons",
+          "Learning ordering from examples"
+        ],
+        "cheapest-flights-within-k-stops": [
+          "Multi-hop routing with hop constraints",
+          "CDN path selection with cost optimization",
+          "Anycast optimization with limited hops",
+          "Shortest path with limited intermediate nodes"
+        ]
+      }
+    },
+    "1d-dp": {
+      "pattern_applications": [
+        "Sequence optimization problems",
+        "State machine optimization",
+        "Resource allocation over time",
+        "String matching and parsing"
+      ],
+      "problems": {
+        "climbing-stairs": [
+          "State machine transition counting",
+          "Computing reachability in protocols",
+          "Counting execution paths",
+          "Protocol state enumeration"
+        ],
+        "min-cost-climbing-stairs": [
+          "Resource optimization in task scheduling",
+          "Cost-aware routing in networks",
+          "Minimum cost path in weighted systems",
+          "Optimization with choices"
+        ],
+        "house-robber": [
+          "Non-adjacent resource allocation",
+          "Scheduling with conflicts and constraints",
+          "Frequency assignment avoiding interference",
+          "Selecting non-overlapping time slots"
+        ],
+        "house-robber-ii": [
+          "Circular resource allocation (ring buffer)",
+          "Round-robin scheduling with constraints",
+          "Resource selection in circular topologies",
+          "Circular dependency resolution"
+        ],
+        "longest-palindromic-substring": [
+          "Detecting symmetric patterns in protocols",
+          "Identifying mirrored attacks in security",
+          "Finding repeated patterns in data",
+          "Palindrome detection in strings"
+        ],
+        "palindromic-substrings": [
+          "Pattern detection in log analysis",
+          "Finding repeated sequences in network traffic",
+          "Identifying symmetric structures",
+          "Counting all palindromic patterns"
+        ],
+        "decode-ways": [
+          "Protocol parsing with ambiguous delimiters",
+          "Interpreting variable-length encodings",
+          "Counting valid parse trees",
+          "Ambiguous grammar resolution"
+        ],
+        "coin-change": [
+          "Making change in distributed transactions",
+          "Resource allocation with fixed denominations",
+          "Packet size optimization",
+          "Minimum resource usage problems"
+        ],
+        "maximum-product-subarray": [
+          "Finding optimal batch sizes for throughput",
+          "Maximizing throughput in pipelined systems",
+          "Resource multiplication optimization",
+          "Handling positive/negative factors"
+        ],
+        "word-break": [
+          "URL parsing and tokenization",
+          "Command-line argument parsing",
+          "Protocol message tokenization",
+          "String segmentation validation"
+        ],
+        "longest-increasing-subsequence": [
+          "Version ordering in systems",
+          "Detecting valid upgrade paths",
+          "Monotonic timestamp validation",
+          "Finding increasing trends in data"
+        ],
+        "partition-equal-subset-sum": [
+          "Load balancing with equal distribution",
+          "Splitting work across workers evenly",
+          "Resource partitioning",
+          "Fair division of resources"
+        ]
+      }
+    },
+    "2d-dp": {
+      "pattern_applications": [
+        "Grid-based optimizations",
+        "String matching and editing",
+        "Multi-dimensional decision problems",
+        "Game theory and simulations"
+      ],
+      "problems": {
+        "unique-paths": [
+          "Counting routing options in mesh networks",
+          "Enumerating deployment strategies",
+          "Path counting in grids",
+          "Analyzing possible execution flows"
+        ],
+        "longest-common-subsequence": [
+          "Diff algorithms (git diff, file comparison)",
+          "Finding common patterns in logs",
+          "Protocol version negotiation",
+          "Sequence alignment in bioinformatics"
+        ],
+        "best-time-to-buy-sell-stock-with-cooldown": [
+          "Rate limiting with exponential backoff",
+          "Throttling with recovery periods",
+          "Resource usage with cooldown constraints",
+          "State machine with waiting states"
+        ],
+        "coin-change-ii": [
+          "Generating change-making strategies",
+          "Resource allocation combination counting",
+          "Enumerating valid configurations",
+          "Counting ways to meet requirements"
+        ],
+        "target-sum": [
+          "Balancing positive/negative adjustments",
+          "Load distribution with +/- changes",
+          "Budget allocation with constraints",
+          "Finding combinations summing to target"
+        ],
+        "interleaving-string": [
+          "Merging streams from multiple sources",
+          "Validating multiplexed protocols",
+          "Checking valid interleavings",
+          "Stream synchronization validation"
+        ],
+        "longest-increasing-path-in-matrix": [
+          "Finding optimal upgrade sequences",
+          "Pathfinding in weighted grids",
+          "Discovering longest monotonic paths",
+          "Analyzing dependency chains in 2D"
+        ],
+        "distinct-subsequences": [
+          "Pattern counting in logs",
+          "DNA sequence analysis",
+          "Counting occurrences of patterns",
+          "Subsequence enumeration"
+        ],
+        "edit-distance": [
+          "String similarity for fuzzy matching",
+          "Spell checking in search systems",
+          "Computing diff metrics",
+          "Minimum edits for transformation"
+        ],
+        "burst-balloons": [
+          "Optimizing order of operations",
+          "Scheduling with dependencies and costs",
+          "Query optimization in databases",
+          "Interval-based optimization"
+        ],
+        "regular-expression-matching": [
+          "Log pattern matching with wildcards",
+          "Protocol validation with patterns",
+          "Input sanitization with regex",
+          "Advanced string matching"
+        ]
+      }
+    },
+    "greedy": {
+      "pattern_applications": [
+        "Local optimization leading to global optimum",
+        "Scheduling and interval problems",
+        "Resource allocation heuristics",
+        "Optimal selection strategies"
+      ],
+      "problems": {
+        "maximum-subarray": [
+          "Finding optimal time windows for batch processing",
+          "Detecting anomalous traffic bursts",
+          "Identifying peak load periods",
+          "Maximum sum in sliding windows"
+        ],
+        "jump-game": [
+          "Reachability analysis in networks",
+          "Validating routing paths",
+          "Checking service accessibility",
+          "Determining if goal is reachable"
+        ],
+        "jump-game-ii": [
+          "Minimizing hops in routing protocols",
+          "Optimizing multi-stage deployments",
+          "Fewest jumps to destination",
+          "Minimum steps in reachability"
+        ],
+        "gas-station": [
+          "Circular routing with resource constraints",
+          "Round-robin scheduling with costs",
+          "Finding valid starting points in circular paths",
+          "Resource-constrained circular traversal"
+        ],
+        "hand-of-straights": [
+          "Grouping related events in batches",
+          "Batching consecutive operations",
+          "Scheduling sequential tasks",
+          "Forming consecutive groups"
+        ],
+        "merge-triplets": [
+          "Combining partial results in map-reduce",
+          "Aggregating metrics from sources",
+          "Merging tuples in data processing",
+          "Target achievement through merging"
+        ],
+        "partition-labels": [
+          "Splitting workload while maintaining locality",
+          "Sharding with affinity constraints",
+          "Partitioning data with grouping",
+          "Maximum partitioning with constraints"
+        ],
+        "valid-parenthesis-string": [
+          "Lenient protocol parsing",
+          "Handling optional fields in formats",
+          "Wildcard matching in validation",
+          "Flexible bracket matching"
+        ]
+      }
+    },
+    "intervals": {
+      "pattern_applications": [
+        "Time-based scheduling",
+        "Resource reservation",
+        "Conflict detection and resolution",
+        "Range merging and querying"
+      ],
+      "problems": {
+        "insert-interval": [
+          "Adding time ranges to schedules",
+          "Merging availability windows",
+          "Consolidating log entries by time",
+          "Inserting into sorted interval list"
+        ],
+        "merge-intervals": [
+          "Coalescing time ranges in monitoring",
+          "Merging overlapping locks",
+          "Storage defragmentation",
+          "Combining overlapping ranges"
+        ],
+        "non-overlapping-intervals": [
+          "Scheduling non-conflicting jobs",
+          "Resource reservation without conflicts",
+          "Avoiding lock contention",
+          "Minimum removals for non-overlap"
+        ],
+        "meeting-rooms": [
+          "Resource booking validation",
+          "Conference room scheduling",
+          "GPU allocation checking",
+          "Detecting scheduling conflicts"
+        ],
+        "meeting-rooms-ii": [
+          "Determining minimum resources needed",
+          "Capacity planning (servers, connections)",
+          "Concurrent session tracking",
+          "Minimum rooms for all meetings"
+        ],
+        "minimum-interval-to-include-each-query": [
+          "Range query optimization",
+          "Index selection in databases",
+          "Finding minimal covering intervals",
+          "Query optimization with ranges"
+        ]
+      }
+    },
+    "math-geometry": {
+      "pattern_applications": [
+        "Numerical computations",
+        "Geometric algorithms",
+        "Matrix operations",
+        "Mathematical optimizations"
+      ],
+      "problems": {
+        "rotate-image": [
+          "Image processing in graphics",
+          "Matrix operations in data transformation",
+          "Coordinate transformations in games",
+          "90-degree rotations in displays"
+        ],
+        "spiral-matrix": [
+          "Traversing 2D data structures systematically",
+          "Rendering patterns in UIs",
+          "Layout algorithms for displays",
+          "Systematic grid traversal"
+        ],
+        "set-matrix-zeroes": [
+          "Marking invalid states in grids",
+          "Propagating failures in matrices",
+          "Cascading updates in 2D structures",
+          "In-place matrix modification"
+        ],
+        "happy-number": [
+          "Cycle detection in iterative algorithms",
+          "Hash collision detection",
+          "Detecting infinite loops in computations",
+          "Floyd's cycle detection application"
+        ],
+        "plus-one": [
+          "Arbitrary-precision arithmetic",
+          "Incrementing version numbers lexicographically",
+          "Big integer operations",
+          "Carry propagation in addition"
+        ],
+        "pow-x-n": [
+          "Cryptographic operations",
+          "Fast exponentiation in modular arithmetic",
+          "Efficient power computation",
+          "Exponentiation by squaring"
+        ],
+        "multiply-strings": [
+          "Big integer multiplication in financial systems",
+          "Cryptographic calculations with large numbers",
+          "Arbitrary-precision arithmetic",
+          "String-based multiplication"
+        ],
+        "detect-squares": [
+          "Geometric queries in spatial databases",
+          "Collision detection in games",
+          "Finding squares in point clouds",
+          "Spatial relationship queries"
+        ]
+      }
+    },
+    "bit-manipulation": {
+      "pattern_applications": [
+        "Low-level optimizations",
+        "Cryptographic operations",
+        "Network protocols",
+        "Space-efficient data structures"
+      ],
+      "problems": {
+        "single-number": [
+          "Finding unique element in distributed hash",
+          "XOR checksums in error detection",
+          "Parity checking in protocols",
+          "Duplicate detection with XOR"
+        ],
+        "number-of-1-bits": [
+          "Population count in bitmaps (bloom filters)",
+          "Counting set bits in permission systems",
+          "Hamming weight computation",
+          "Bit counting in network protocols"
+        ],
+        "counting-bits": [
+          "Precomputing bit counts for optimization",
+          "Optimizing bitwise operations in loops",
+          "Building lookup tables",
+          "Dynamic programming on bits"
+        ],
+        "reverse-bits": [
+          "Network byte order conversion (endianness)",
+          "Bit-level protocol transformations",
+          "Mirror operations on bit patterns",
+          "Reversing binary representations"
+        ],
+        "missing-number": [
+          "Detecting gaps in sequence numbers (TCP)",
+          "Finding missing shards in distributed systems",
+          "Identifying lost packets",
+          "XOR-based missing element detection"
+        ],
+        "sum-of-two-integers": [
+          "Bitwise arithmetic in ALUs",
+          "Implementing addition without operators",
+          "Low-level arithmetic operations",
+          "Carry computation with XOR and AND"
+        ],
+        "reverse-integer": [
+          "Endianness conversion in protocols",
+          "Numeric transformations",
+          "Integer reversal for algorithms",
+          "Overflow handling in reversal"
+        ],
+        "xor-distance": [
+          "P2P node selection in DHTs (Kademlia)",
+          "Proximity routing in distributed systems",
+          "XOR metric in distributed hash tables",
+          "Distance computation for consistent hashing"
+        ]
+      }
+    }
+  }
+}

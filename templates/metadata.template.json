@@ -1,0 +1,18 @@
+{
+  "title": "{{TITLE}}",
+  "slug": "{{SLUG}}",
+  "difficulty": "{{DIFFICULTY}}",
+  "pattern": "{{PATTERN}}",
+  "neetcode_url": "",
+  "leetcode_url": "",
+  "tags": [],
+  "time_complexity": "O(?)",
+  "space_complexity": "O(?)",
+  "description": "{{DESCRIPTION}}",
+  "hints": [
+    "Add helpful hints here"
+  ],
+  "real_world_applications": [
+    "Check real-world-applications.json for relevant examples"
+  ]
+}

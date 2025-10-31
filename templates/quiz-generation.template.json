@@ -1,0 +1,65 @@
+{
+  "question_types": {
+    "code_selection": {
+      "enabled": true,
+      "prompt_template": "Which solution correctly implements {{TITLE}}?",
+      "generation_strategy": "show_correct_solution_plus_3_variations",
+      "variations": [
+        "wrong_data_structure",
+        "off_by_one_error",
+        "incorrect_edge_case_handling"
+      ]
+    },
+    "complexity_analysis": {
+      "enabled": true,
+      "prompt_template": "What is the time complexity of {{TITLE}}?",
+      "generation_strategy": "use_metadata_complexity",
+      "wrong_options_count": 3
+    },
+    "pattern_identification": {
+      "enabled": true,
+      "prompt_template": "Which pattern does {{TITLE}} use?",
+      "generation_strategy": "use_metadata_pattern_plus_similar_patterns"
+    },
+    "language_translation": {
+      "enabled": true,
+      "prompt_template": "Given this {{SOURCE_LANG}} solution for {{TITLE}}, which {{TARGET_LANG}} code is equivalent?",
+      "generation_strategy": "show_correct_translation_plus_3_variations",
+      "language_pairs": [
+        ["go", "rust"],
+        ["typescript", "go"],
+        ["rust", "typescript"]
+      ]
+    },
+    "bug_detection": {
+      "enabled": true,
+      "prompt_template": "Which line contains a bug in this solution for {{TITLE}}?",
+      "generation_strategy": "inject_single_bug_into_correct_solution",
+      "bug_types": [
+        "off_by_one",
+        "wrong_operator",
+        "missing_edge_case",
+        "incorrect_return"
+      ]
+    },
+    "real_world_application": {
+      "enabled": true,
+      "prompt_template": "Which real-world scenario would benefit from the pattern used in {{TITLE}}?",
+      "generation_strategy": "use_metadata_applications_plus_unrelated_options"
+    }
+  },
+  "difficulty_scaling": {
+    "easy": {
+      "question_types": ["complexity_analysis", "pattern_identification", "real_world_application"],
+      "time_limit_seconds": 30
+    },
+    "medium": {
+      "question_types": ["code_selection", "language_translation", "real_world_application"],
+      "time_limit_seconds": 45
+    },
+    "hard": {
+      "question_types": ["code_selection", "bug_detection", "language_translation"],
+      "time_limit_seconds": 60
+    }
+  }
+}
