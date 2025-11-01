@@ -1,0 +1,21 @@
+{
+  "title": "Two Sum",
+  "slug": "two-sum",
+  "difficulty": "Easy",
+  "pattern": "arrays-hashing",
+  "neetcode_url": "https://neetcode.io/problems/two-integer-sum?list=neetcode150",
+  "leetcode_url": "https://leetcode.com/problems/two-sum/description/",
+  "tags": [],
+  "time_complexity": "O(n)",
+  "space_complexity": "O(n)",
+  "description": "Given an array of integers, return the indices of the two numbers such that they add up to a specific target.",
+  "hints": [
+    "Hashmaps"
+  ],
+  "real_world_applications": [
+    "Load balancing (find two servers that sum to target capacity)",
+    "Packet pair analysis in networking",
+    "Budget allocation in resource scheduling",
+    "Finding complementary resource pairs in distributed systems"
+  ]
+}

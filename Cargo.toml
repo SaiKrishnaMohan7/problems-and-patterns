@@ -3,6 +3,7 @@ resolver = "2"
 members = [
   "problems/arrays-hashing/contains-duplicate",
   "problems/arrays-hashing/valid-anagram",
+  "problems/arrays-hashing/two-sum",
 ]
 
 [workspace.package]
