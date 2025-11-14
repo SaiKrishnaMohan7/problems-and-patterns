@@ -1,0 +1,25 @@
+{
+  "title": "Valid Sudoku",
+  "slug": "valid-sudoku",
+  "difficulty": "Medium",
+  "pattern": "arrays-hashing",
+  "neetcode_url": "https://neetcode.io/problems/valid-sudoku",
+  "leetcode_url": "https://leetcode.com/problems/valid-sudoku/",
+  "tags": ["array", "hash-table", "matrix"],
+  "time_complexity": "O(1)",
+  "space_complexity": "O(1)",
+  "description": "Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to Sudoku rules: each row, column, and 3x3 sub-box must contain digits 1-9 without repetition.",
+  "hints": [
+    "Can you use hash sets to track seen numbers in each row, column, and 3x3 box?",
+    "How can you calculate which 3x3 box a cell belongs to? Try using (row / 3, col / 3)",
+    "You can iterate through the board once and check all three constraints simultaneously",
+    "The complexity is O(1) because the board size is fixed at 9x9 (81 cells)"
+  ],
+  "real_world_applications": [
+    "Validating puzzle solutions in gaming platforms",
+    "Constraint satisfaction validation in configuration management systems",
+    "Data integrity checking with complex uniqueness constraints across multiple dimensions",
+    "Rule-based validation in compliance and auditing systems",
+    "Matrix constraint validation in resource allocation and scheduling"
+  ]
+}
