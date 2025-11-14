@@ -9,6 +9,7 @@ members = [
   "problems/arrays-hashing/encode-and-decode-strings",
   "problems/arrays-hashing/product-of-array-except-self",
   "problems/arrays-hashing/validate-sudoku",
+  "problems/arrays-hashing/longest-consecutive-sequence",
 ]
 
 [workspace.package]

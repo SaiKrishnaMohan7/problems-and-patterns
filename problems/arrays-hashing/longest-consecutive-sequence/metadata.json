@@ -1,0 +1,24 @@
+{
+  "title": "Longest Consecutive Sequence",
+  "slug": "longest-consecutive-sequence",
+  "difficulty": "Medium",
+  "pattern": "arrays-hashing",
+  "neetcode_url": "https://neetcode.io/problems/longest-consecutive-sequence",
+  "leetcode_url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+  "tags": ["array", "hash-table", "union-find"],
+  "time_complexity": "O(n)",
+  "space_complexity": "O(n)",
+  "description": "Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence. You must write an algorithm that runs in O(n) time.",
+  "hints": [
+    "Can you use a hash set to check for consecutive numbers in O(1) time?",
+    "How can you identify the start of a consecutive sequence?",
+    "If a number has a left neighbor (num-1), it's not the start of a sequence",
+    "Only count sequences starting from numbers with no left neighbor to avoid duplicate counting"
+  ],
+  "real_world_applications": [
+    "Detecting network partition windows",
+    "Finding continuous availability periods in monitoring",
+    "Log correlation by timestamp ranges",
+    "Identifying contiguous memory blocks"
+  ]
+}
