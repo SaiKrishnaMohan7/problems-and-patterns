@@ -1,0 +1,24 @@
+{
+  "title": "Encode and Decode Strings",
+  "slug": "encode-and-decode-strings",
+  "difficulty": "Medium",
+  "pattern": "arrays-hashing",
+  "neetcode_url": "https://neetcode.io/problems/string-encode-and-decode",
+  "leetcode_url": "https://leetcode.com/problems/encode-and-decode-strings/",
+  "tags": ["array", "string", "design"],
+  "time_complexity": "O(n)",
+  "space_complexity": "O(n)",
+  "description": "Design an algorithm to encode a list of strings to a single string. The encoded string is then decoded back to the original list of strings.",
+  "hints": [
+    "How can you handle strings that contain special characters or delimiters?",
+    "Think about using length-prefix encoding",
+    "Can you use the length of each string to determine where it ends?"
+  ],
+  "real_world_applications": [
+    "Serializing data for network transmission",
+    "Storing multiple strings in a single database field",
+    "Encoding cookie values with multiple parameters",
+    "Compressing log file entries",
+    "Protocol buffer implementations"
+  ]
+}

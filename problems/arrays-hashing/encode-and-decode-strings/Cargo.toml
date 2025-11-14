@@ -1,0 +1,11 @@
+[package]
+name = "encode_and_decode_strings"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lib]
+path = "solution.rs"
+
+[dependencies]
