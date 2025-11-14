@@ -1,0 +1,24 @@
+{
+  "title": "Group Anagrams",
+  "slug": "group-anagrams",
+  "difficulty": "Medium",
+  "pattern": "arrays-hashing",
+  "neetcode_url": "https://neetcode.io/problems/anagram-groups",
+  "leetcode_url": "https://leetcode.com/problems/group-anagrams/",
+  "tags": ["array", "hash-table", "string", "sorting"],
+  "time_complexity": "O(m * n log n)",
+  "space_complexity": "O(m * n)",
+  "description": "Given an array of strings, group the anagrams together. You can return the answer in any order. An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.",
+  "hints": [
+    "Can you sort each string and use it as a key?",
+    "What data structure would help group strings with the same sorted form?",
+    "Alternative: Can you use character frequency counts as a key instead of sorting?"
+  ],
+  "real_world_applications": [
+    "Clustering similar log messages for analysis",
+    "Grouping API endpoints by signature",
+    "Organizing similar DNS queries",
+    "Batching similar database queries",
+    "Detecting plagiarism by grouping similar text patterns"
+  ]
+}
