@@ -40,12 +40,10 @@ new:
 		templates/cargo.template.toml > problems/$(PATTERN)/$(SLUG)/Cargo.toml
 	@sed 's/{{TITLE}}/$(TITLE)/g; s/{{SLUG}}/$(SLUG)/g; s/{{PATTERN}}/$(PATTERN)/g; s/{{DIFFICULTY}}/$(DIFFICULTY)/g; s/{{DESCRIPTION}}/TODO: Add description/g' \
 		templates/metadata.template.json > problems/$(PATTERN)/$(SLUG)/metadata.json
-	@echo "problems/$(PATTERN)/$(SLUG)" >> Cargo.toml.tmp
 	@if grep -q "^members = \[" Cargo.toml; then \
-    perl -pe 'if (/^members = \[/) { print "  \"problems/$(PATTERN)/$(SLUG)\",\n" }' Cargo.toml > Cargo.toml.new; \
+    perl -pe 'if (/^\]/ && !$$done) { print "  \"problems/$(PATTERN)/$(SLUG)\",\n"; $$done=1 }' Cargo.toml > Cargo.toml.new; \
     mv Cargo.toml.new Cargo.toml; \
   fi
-	@rm -f Cargo.toml.tmp
 	@echo "✓ Created problem structure at problems/$(PATTERN)/$(SLUG)/"
 	@echo "✓ Added to Rust workspace"
 	@python3 scripts/populate-real-world-apps.py $(PATTERN) $(SLUG) || echo "⚠ Could not auto-populate real-world applications (you can run 'make populate-apps PATTERN=$(PATTERN) SLUG=$(SLUG)' later)"
