@@ -1,0 +1,24 @@
+{
+  "title": "Product of Array Except Self",
+  "slug": "product-of-array-except-self",
+  "difficulty": "Medium",
+  "pattern": "arrays-hashing",
+  "neetcode_url": "https://neetcode.io/problems/products-of-array-discluding-self",
+  "leetcode_url": "https://leetcode.com/problems/product-of-array-except-self/",
+  "tags": ["array", "prefix-sum"],
+  "time_complexity": "O(n)",
+  "space_complexity": "O(1)",
+  "description": "Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]. You must write an algorithm that runs in O(n) time and without using the division operation.",
+  "hints": [
+    "Can you calculate the product of all elements to the left of each index?",
+    "Can you calculate the product of all elements to the right of each index?",
+    "Think about using prefix and postfix products"
+  ],
+  "real_world_applications": [
+    "Calculating distributed metrics (total minus current node)",
+    "Computing marginal costs in resource allocation",
+    "Load distribution across nodes excluding self",
+    "Portfolio diversification analysis (return without specific asset)",
+    "Network traffic analysis (total bandwidth excluding specific node)"
+  ]
+}

@@ -1,0 +1,11 @@
+[package]
+name = "product_of_array_except_self"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lib]
+path = "solution.rs"
+
+[dependencies]
