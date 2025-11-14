@@ -5,6 +5,7 @@ members = [
   "problems/arrays-hashing/valid-anagram",
   "problems/arrays-hashing/two-sum",
   "problems/arrays-hashing/group-anagrams",
+  "problems/arrays-hashing/topK-frequent-elements",
 ]
 
 [workspace.package]

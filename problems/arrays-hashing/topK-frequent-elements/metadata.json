@@ -1,0 +1,24 @@
+{
+  "title": "Top K Frequent Elements",
+  "slug": "topK-frequent-elements",
+  "difficulty": "Medium",
+  "pattern": "arrays-hashing",
+  "neetcode_url": "https://neetcode.io/problems/top-k-elements-in-list",
+  "leetcode_url": "https://leetcode.com/problems/top-k-frequent-elements/",
+  "tags": ["array", "hash-table", "sorting", "heap", "bucket-sort", "counting"],
+  "time_complexity": "O(n)",
+  "space_complexity": "O(n)",
+  "description": "Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.",
+  "hints": [
+    "Can you use a hash map to count the frequency of each element?",
+    "Think about bucket sort - what if you use frequency as the bucket index?",
+    "Alternative: Can you use a heap/priority queue to keep track of the top k elements?"
+  ],
+  "real_world_applications": [
+    "Finding trending topics or hashtags in social media",
+    "Identifying most accessed files in a cache eviction policy",
+    "Determining top search queries in analytics",
+    "Finding most frequent error codes in log analysis",
+    "Recommending popular products based on purchase frequency"
+  ]
+}
