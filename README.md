@@ -172,6 +172,10 @@ All solutions must:
 
 Run `make test` before every commit!
 
+## Special thanks
+
+- Navdeep Singh, Sean Prasad
+
 ## License
 
 MIT
